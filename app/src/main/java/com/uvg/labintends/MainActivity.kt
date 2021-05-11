@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         btnOpen.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity2::class.java)
-            intent.putExtra("valor", "Hola Mundo")
+            intent.putExtra("valor", "Intends")
             intent.putExtra("valor2", "Prueba")
             //intent.putExtra("valor3", "aaa")
             //startActivity(intent)
