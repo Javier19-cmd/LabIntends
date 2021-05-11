@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Tener cuatro botones que representan suma, resta, multiplicación y división.
+        //Cada botón redirige a MainActiviy2
+        //En el MainActivity2 tienen que haber dos editText para poder ingresar los números.
+        //
+
         btnOpen.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity2::class.java)
             intent.putExtra("valor", "Hola Mundo")
