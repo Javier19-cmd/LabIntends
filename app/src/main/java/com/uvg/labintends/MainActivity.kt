@@ -18,7 +18,44 @@ class MainActivity : AppCompatActivity() {
         //En el MainActivity2 tienen que haber dos editText para poder ingresar los números.
         //
 
-        btnOpen.setOnClickListener{
+        //Botón para realizar la suma.
+        btnSumar.setOnClickListener{
+            val intent: Intent = Intent(this, MainActivity2::class.java)
+            intent.putExtra("valor", "Intends")
+            intent.putExtra("valor2", "Prueba")
+            //intent.putExtra("valor3", "aaa")
+            //startActivity(intent)
+            //finish()
+
+            startActivityForResult(intent, 1)
+        }
+
+        //Botón para realizar la resta.
+        btnRestar.setOnClickListener{
+            val intent: Intent = Intent(this, MainActivity2::class.java)
+            intent.putExtra("valor", "Intends")
+            intent.putExtra("valor2", "Prueba")
+            //intent.putExtra("valor3", "aaa")
+            //startActivity(intent)
+            //finish()
+
+            startActivityForResult(intent, 1)
+        }
+
+        //Botón para realizar la multiplicación.
+        btnMultiplicar.setOnClickListener{
+            val intent: Intent = Intent(this, MainActivity2::class.java)
+            intent.putExtra("valor", "Intends")
+            intent.putExtra("valor2", "Prueba")
+            //intent.putExtra("valor3", "aaa")
+            //startActivity(intent)
+            //finish()
+
+            startActivityForResult(intent, 1)
+        }
+
+        //Botón para realizar la división.
+        btnDividir.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity2::class.java)
             intent.putExtra("valor", "Intends")
             intent.putExtra("valor2", "Prueba")
@@ -29,6 +66,7 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent, 1)
         }
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
