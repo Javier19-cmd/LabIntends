@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         //Botón para realizar la suma.
         btnSumar.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity2::class.java)
-            intent.putExtra("valor", "Intends")
+            intent.putExtra("valor", "Sumar")
             intent.putExtra("valor2", "Prueba")
             //intent.putExtra("valor3", "aaa")
             //startActivity(intent)
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         //Botón para realizar la resta.
         btnRestar.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity2::class.java)
-            intent.putExtra("valor", "Intends")
+            intent.putExtra("valor", "Restar")
             intent.putExtra("valor2", "Prueba")
             //intent.putExtra("valor3", "aaa")
             //startActivity(intent)
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         //Botón para realizar la multiplicación.
         btnMultiplicar.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity2::class.java)
-            intent.putExtra("valor", "Intends")
+            intent.putExtra("valor", "Multiplicar")
             intent.putExtra("valor2", "Prueba")
             //intent.putExtra("valor3", "aaa")
             //startActivity(intent)
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         //Botón para realizar la división.
         btnDividir.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity2::class.java)
-            intent.putExtra("valor", "Intends")
+            intent.putExtra("valor", "Dividir")
             intent.putExtra("valor2", "Prueba")
             //intent.putExtra("valor3", "aaa")
             //startActivity(intent)

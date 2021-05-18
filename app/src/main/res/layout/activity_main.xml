@@ -34,7 +34,7 @@
     <Button
         android:id="@+id/btnDividir"
         android:layout_width="match_parent"
-        android:text="Restar"
+        android:text="Dividir"
         android:layout_height="wrap_content" />
 
 </LinearLayout>

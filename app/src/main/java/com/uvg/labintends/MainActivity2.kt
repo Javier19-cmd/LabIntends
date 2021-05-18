@@ -32,6 +32,12 @@ class MainActivity2 : AppCompatActivity() {
 
         }
 
+        //Botón para hacer las operaciones.
+        btnOperar.setOnClickListener(){
+
+        }
+
+        //Botón para regresar al menú principal.
         btnRegresar.setOnClickListener()
         {
 

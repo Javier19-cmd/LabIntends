@@ -25,6 +25,14 @@
         android:layout_height="wrap_content"
         android:textSize="22sp" />
 
+    <!--Botón para hacer las operaciones-->
+    <Button
+        android:id="@+id/btnOperar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar" />
+
+    <!--Botón para regresar-->
     <Button
         android:id="@+id/btnRegresar"
         android:layout_width="match_parent"
