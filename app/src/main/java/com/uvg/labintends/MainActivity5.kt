@@ -4,7 +4,7 @@ package com.uvg.labintends
 * Nombre: Javier Sebastián Valle Balsells
 * Carnet: 20159
 * Sección: 10
-* Clase MainActivity4: Esta clase sirve para hacer la operación aritmética multiplicación.
+* Clase MainActivity5: Esta clase sirve para hacer la operación aritmética división.
 * @see https://www.youtube.com/watch?v=qPcvJhpNDDM
 * */
 
@@ -15,13 +15,14 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main2.*
-import kotlinx.android.synthetic.main.activity_main4.*
+import kotlinx.android.synthetic.main.activity_main5.*
 import kotlinx.android.synthetic.main.activity_main4.txtTexto
 import kotlinx.android.synthetic.main.activity_main2.btnOperar
 import kotlinx.android.synthetic.main.activity_main2.btnRegresar
-import kotlinx.android.synthetic.main.activity_main4.*
+import kotlinx.android.synthetic.main.activity_main5.*
 
-class MainActivity4 : AppCompatActivity() {
+
+class MainActivity5 : AppCompatActivity() {
 
     //Variables globales para los EditText y el TextView a usar.
     lateinit var numero1: EditText
@@ -81,7 +82,7 @@ class MainActivity4 : AppCompatActivity() {
             var num1:String = numero1.text.toString()
             var num2:String = numero2.text.toString()
 
-            val resultado = (num1.toFloat() * num2.toFloat()) //Operando los valores convertidos.
+            val resultado = (num1.toFloat() / num2.toFloat()) //Operando los valores convertidos.
 
             res.setText(resultado.toString()) //Imprimiendo el resultado.
 
@@ -98,5 +99,4 @@ class MainActivity4 : AppCompatActivity() {
         }
 
     }
-
 }

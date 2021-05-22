@@ -1,5 +1,13 @@
 package com.uvg.labintends
 
+/*
+* Nombre: Javier Sebastián Valle Balsells
+* Carnet: 20159
+* Sección: 10
+* Clase MainActivity: Esta clase sirve para hacer las llamadas a las clases necesarias para operar los números a introducir.
+* @see https://www.youtube.com/watch?v=qPcvJhpNDDM
+* */
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -54,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
         //Botón para realizar la división.
         btnDividir.setOnClickListener{
-            val intent: Intent = Intent(this, MainActivity2::class.java)
+            val intent: Intent = Intent(this, MainActivity5::class.java)
             intent.putExtra("valor", "Dividir")
             intent.putExtra("valor2", "Prueba")
             //intent.putExtra("valor3", "aaa")

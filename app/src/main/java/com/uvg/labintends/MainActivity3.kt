@@ -1,5 +1,13 @@
 package com.uvg.labintends
 
+/*
+* Nombre: Javier Sebastián Valle Balsells
+* Carnet: 20159
+* Sección: 10
+* Clase MainActivity3: Esta clase sirve para hacer la operación aritmética resta.
+* @see https://www.youtube.com/watch?v=qPcvJhpNDDM
+* */
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,6 +21,8 @@ import kotlinx.android.synthetic.main.activity_main2.btnOperar
 import kotlinx.android.synthetic.main.activity_main2.btnRegresar
 
 class MainActivity3 : AppCompatActivity() {
+
+    //Variables globales para los EditText y el TextView a usar.
     lateinit var numero1: EditText
     lateinit var numero2: EditText
     lateinit var res: TextView
@@ -40,7 +50,7 @@ class MainActivity3 : AppCompatActivity() {
             val valor3 = bundle.getString("valor3", "No hay valor")
             Toast.makeText(this, valor3, Toast.LENGTH_SHORT).show()
 
-
+            //Buscando los EditText y el TextView
             this.numero1 = this.findViewById(R.id.valorA)
             this.numero2 = this.findViewById(R.id.valorB)
             this.res = this.findViewById(R.id.txtTexto)
@@ -66,12 +76,13 @@ class MainActivity3 : AppCompatActivity() {
 
             intent.putExtra("Valor", "($rta)")*/
 
+            //Conviertiendo el texto a String de cada valor que se introduce por parte del usuario.
             var num1:String = numero1.text.toString()
             var num2:String = numero2.text.toString()
 
-            val resultado = (num1.toFloat() - num2.toFloat())
+            val resultado = (num1.toFloat() - num2.toFloat()) //Operando los valores convertidos.
 
-            res.setText(resultado.toString())
+            res.setText(resultado.toString()) //Imprimiendo el resultado.
 
         }
 
