@@ -3,6 +3,7 @@ package com.uvg.labintends
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -23,16 +24,13 @@ class MainActivity : AppCompatActivity() {
             val intent: Intent = Intent(this, MainActivity2::class.java)
             intent.putExtra("valor", "Sumar")
             intent.putExtra("valor2", "Prueba")
-            //intent.putExtra("valor3", "aaa")
-            //startActivity(intent)
-            //finish()
 
             startActivityForResult(intent, 1)
         }
 
         //Botón para realizar la resta.
         btnRestar.setOnClickListener{
-            val intent: Intent = Intent(this, MainActivity2::class.java)
+            val intent: Intent = Intent(this, MainActivity3::class.java)
             intent.putExtra("valor", "Restar")
             intent.putExtra("valor2", "Prueba")
             //intent.putExtra("valor3", "aaa")

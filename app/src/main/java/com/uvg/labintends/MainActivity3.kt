@@ -7,17 +7,19 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.activity_main3.*
+import kotlinx.android.synthetic.main.activity_main3.txtTexto
+import kotlinx.android.synthetic.main.activity_main2.btnOperar
+import kotlinx.android.synthetic.main.activity_main2.btnRegresar
 
-
-class MainActivity2 : AppCompatActivity() {
-
+class MainActivity3 : AppCompatActivity() {
     lateinit var numero1: EditText
     lateinit var numero2: EditText
     lateinit var res: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_main3)
 
         val bundle = intent.extras
 
@@ -67,7 +69,7 @@ class MainActivity2 : AppCompatActivity() {
             var num1:String = numero1.text.toString()
             var num2:String = numero2.text.toString()
 
-            val resultado = (num1.toFloat() + num2.toFloat())
+            val resultado = (num1.toFloat() - num2.toFloat())
 
             res.setText(resultado.toString())
 
@@ -84,4 +86,6 @@ class MainActivity2 : AppCompatActivity() {
         }
 
     }
+
+
 }
