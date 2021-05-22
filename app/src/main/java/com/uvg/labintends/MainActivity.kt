@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
         //Botón para realizar la multiplicación.
         btnMultiplicar.setOnClickListener{
-            val intent: Intent = Intent(this, MainActivity2::class.java)
+            val intent: Intent = Intent(this, MainActivity4::class.java)
             intent.putExtra("valor", "Multiplicar")
             intent.putExtra("valor2", "Prueba")
             //intent.putExtra("valor3", "aaa")
